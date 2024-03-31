@@ -1,0 +1,31 @@
+.brand {
+  &__img {
+    @media screen and (max-width: 1024px) {
+      max-width: 256px;
+    }
+    @media screen and (max-width: 375px) {
+      max-width: 375px;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 16px;
+  }
+  &__items {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+    @media screen and (max-width: 1280px) {
+      max-width: 1024px;
+      overflow: hidden;
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(3, 256px);
+    }
+    @media screen and (max-width: 375px) {
+      grid-template-columns: repeat(1, 375px);
+    }
+  }
+}

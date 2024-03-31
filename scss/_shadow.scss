@@ -1,0 +1,18 @@
+.shadow {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  &__element_1 {
+    height: 10px;
+    background-color: #b4b4b4;
+    width: 95%;
+    border-radius: 0 0 12px 12px;
+  }
+  &__element_2 {
+    height: 10px;
+    background-color: #d2d2d2;
+    width: 90%;
+    border-radius: 0 0 12px 12px;
+  }
+}
